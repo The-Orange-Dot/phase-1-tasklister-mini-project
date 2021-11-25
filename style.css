@@ -4,14 +4,28 @@ html {
   font-family: "Titillium Web", sans-serif;
 }
 
+h2 {
+  text-align: center;
+}
+
 body {
   min-height: 100%;
   min-width: 100%;
-  background: linear-gradient(pink, violet);
+  background: #dfdfdf;
 }
 
 button {
   font-size: 7px;
+}
+
+#submit-button {
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  padding: 5px;
 }
 
 #main-content {
@@ -21,10 +35,10 @@ button {
   align-items: center;
   flex-direction: column;
   border: 1px solid #333;
-  background: rgba(255, 255, 255, 0.3);
+  background: #f3f3f3;
   padding: 15px 20px 18px 18px;
   border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 #list {
@@ -32,6 +46,26 @@ button {
   border: 1px solid #333;
   background: rgba(255, 255, 255, 0.75);
   padding: 15px 20px 18px 18px;
+  width: 500px;
   border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#list div {
+  display: flex;
+  flex-direction: row;
+}
+
+#del {
+  align-self: end;
+  height: 50px;
+  width: 100px;
+}
+
+li {
+  list-style-type: none;
+  padding: 5px;
+  padding-left: 10px;
+  margin: 10px;
+  width: 400px;
 }
