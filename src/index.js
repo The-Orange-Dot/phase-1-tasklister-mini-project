@@ -17,11 +17,12 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       event.preventDefault();
       const submitted = input.value;
+      let p = document.createElement("P");
       let li = document.createElement("LI");
       let div = document.createElement("DIV");
-      li.innerText = submitted;
+      p.innerText = submitted;
       todoList.appendChild(div);
-      // div.appendChild(li);
+      li.appendChild(p);
 
       //---addition tasks---
       //---delete button--
@@ -52,7 +53,8 @@ document.addEventListener("DOMContentLoaded", () => {
       } else {
         li.style.background = "yellow";
         div.classList.add("med-priority");
-        todoList.insertBefore(div, low);
+        const lowTask = document.getElementsByClassName("low-priority")[0];
+        todoList.insertBefore(div, lowTask);
         div.append(li);
         li.append(del);
       }

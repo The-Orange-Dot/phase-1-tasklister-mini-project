@@ -52,20 +52,27 @@ button {
 }
 
 #list div {
-  display: flex;
-  flex-direction: row;
+  width: 100%;
 }
 
-#del {
-  align-self: end;
-  height: 50px;
-  width: 100px;
+.del {
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: white;
 }
 
 li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   list-style-type: none;
   padding: 5px;
   padding-left: 10px;
   margin: 10px;
   width: 400px;
+}
+
+p {
+  margin: 0;
 }
